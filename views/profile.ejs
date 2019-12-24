@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="../assets/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+</head>
+<body>
+    <nav><ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/contact">Contact</a>
+        </li>
+    </ul></nav>
+    <div class="image-container">
+        <img src="https://i.pinimg.com/236x/8b/31/5b/8b315b1721d869a49b40cb20b8fcae64.jpg">
+    </div>
+  
+    <h1>Welcome to the profile  of <%=person%></h1>
+    <p><strong>fullname: </strong><%= data.name%></p>
+    <p><strong>age: </strong><%= data.age%></p>
+    <p><strong>job: </strong><%= data.job%></p>
+    <h2>Profile information</h2>
+    <ul>
+        <% data.hobbies.forEach(item=>{ %>
+            <li><%= item %></li>
+       <% }) %>
+    </ul>
+    <p>You won't see a better website ever</p>
+ 
+</body>
+</html>
